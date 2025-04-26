@@ -1,0 +1,77 @@
+:root{
+    --bg:#111;
+    --fg:#eee;
+    --accent:#3498db;
+    --aside-bg:#222;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    color: var(--fg);
+    background: var(--bg);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+header{
+    padding: 1rem;
+    text-align: center;
+}
+main{
+    flex: 1;
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+}
+aside{
+    width: 250px;
+    display:flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+aside textarea{
+    flex: 1;
+    resize: vertical;
+    padding: 0.5rem;
+    background: var(--aside-bg);
+    color: var(--fg);
+    border: 1px solid var(--accent);
+    border-radius: 10px;
+}
+
+aside button{
+    padding: 0.5rem;
+    background: var(--accent);
+    border: 1px solid var(--accent);
+    border-radius: 5px;
+    color: var(--fg);
+    cursor: pointer;
+}
+
+.bracket{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 2rem auto;
+}
+.macth_box {
+    color: var(--fg);
+}
+.macth_box .macth_box_players {
+    background: var(--aside-bg);
+    color: var(--fg);
+    border-radius: 10px;
+    border: 1px solid var(--accent);
+    padding: 0.9rem;
+}
+footer{
+    text-align: center;
+    color: var(--fg);
+}
